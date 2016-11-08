@@ -1,7 +1,7 @@
 # This Makefile is donated to the Public Domain
 
-# CXX = g++5
-# CXXOPTS = -std=c++11
+CXX = g++-5
+CXXOPTS = -std=c++11
 
 all: executable
 rebuild: clean all
@@ -10,9 +10,9 @@ debug: CXXFLAGS += -g
 debug: executable
 
 executable: main.o part.o head.o arm.o locomotor.o battery.o torso.o model.o customer.o sa.o order.o shop.o controller.o
-	$(CXX) $(CXXOPTS) -std=c++11 -o 'rrs' 'main.o' 'part.o' 'head.o' 'arm.o' 'locomotor.o' 'battery.o' 'torso.o' 'model.o' 'customer.o' 'sa.o' 'order.o' 'shop.o' 'controller.o' -Wl,-Bsymbolic-functions -lfltk -lX11
+	$(CXX) $(CXXOPTS) -std=c++11 -o 'rrs' 'main.o' 'part.o' 'head.o' 'arm.o' 'locomotor.o' 'battery.o' 'torso.o' 'model.o' 'customer.o' 'sa.o' 'order.o' 'shop.o' 'controller.o' -Wl,-L/usr/local/lib -lfltk
 test: test.o part.o head.o arm.o locomotor.o battery.o torso.o model.o customer.o sa.o order.o shop.o controller.o
-	$(CXX) $(CXXOPTS) -std=c++11 -o 'test' 'test.o' 'part.o' 'head.o' 'arm.o' 'locomotor.o' 'battery.o' 'torso.o' 'model.o' 'customer.o' 'sa.o' 'order.o' 'shop.o' 'controller.o' -Wl,-Bsymbolic-functions -lfltk -lX11
+	$(CXX) $(CXXOPTS) -std=c++11 -o 'test' 'test.o' 'part.o' 'head.o' 'arm.o' 'locomotor.o' 'battery.o' 'torso.o' 'model.o' 'customer.o' 'sa.o' 'order.o' 'shop.o' 'controller.o' -Wl,-L/usr/local/lib -lfltk
 main.o: main.cpp part.h model.h customer.h sa.h order.h shop.h controller.h
 	$(CXX) -c $(CXXOPTS) $(fltk-config --cxxflags) main.cpp
 part.o: part.cpp
