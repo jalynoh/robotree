@@ -1,7 +1,7 @@
 # This Makefile is donated to the Public Domain
 
-CXX = g++-5
-CXXOPTS = -std=c++11
+# CXX = g++5
+# CXXOPTS = -std=c++11
 
 all: executable
 rebuild: clean all
