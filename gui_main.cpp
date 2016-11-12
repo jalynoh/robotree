@@ -19,6 +19,9 @@ using namespace std;
 void create_robot_partCB(Fl_Widget* w, void* p);
 void cancel_robot_partCB(Fl_Widget* w, void* p);
 class Robot_Part_Dialog;
+void create_robot_modelCB(Fl_Widget* w, void* p);
+void cancel_robot_modelCB(Fl_Widget* w, void* p);
+class Robot_Model_Dialog;
 
 //
 // Widgets
@@ -27,6 +30,7 @@ class Robot_Part_Dialog;
 Fl_Window *win;
 Fl_Menu_Bar *menubar;
 Robot_Part_Dialog *robot_part_dlg; // The dialog of interest!
+Robot_Model_Dialog *robot_model_dlg;
 
 //
 // Robot Part pop-out dialog box
@@ -87,11 +91,70 @@ class Robot_Part_Dialog {
 };
 
 //
+// Robot Model pop out dialog
+//
+
+class Robot_Model_Dialog {
+	public:
+	Robot_Model_Dialog() {
+		dialog = new Fl_Window(340, 270, "Robot Model");
+		
+		rm_name = new Fl_Input(120, 10, 210, 25, "Name:");
+		rm_name->align(FL_ALIGN_LEFT);
+		
+		rm_part_number = new Fl_Input(120, 40, 210, 25, "Model Number:");
+		rm_part_number->align(FL_ALIGN_LEFT);
+		
+		rm_type = new Fl_Input(120, 70, 210, 25, "Type:");
+		rm_type->align(FL_ALIGN_LEFT);
+		
+		rm_weight = new Fl_Input(120, 100, 210, 25, "Price:");
+		rm_weight->align(FL_ALIGN_LEFT);
+		
+		rm_cost = new Fl_Input(120, 130, 210, 25, "Cost:");
+		rm_cost->align(FL_ALIGN_LEFT);
+		
+		rm_description = new Fl_Multiline_Input(120, 160, 210, 75, "Description:");
+		rm_description->align(FL_ALIGN_LEFT);
+		
+		rm_create = new Fl_Return_Button(145, 240, 120, 25, "Create");
+		rm_create->callback((Fl_Callback *)create_robot_modelCB, 0);
+		
+		rm_cancel = new Fl_Button(270, 240, 60, 25, "Cancel");
+		rm_cancel->callback((Fl_Callback *)cancel_robot_modelCB, 0);
+		
+		dialog->end();
+		dialog->set_non_modal();
+	}
+	
+	void show() {dialog->show();}
+	void hide() {dialog->hide();}
+	string name() {return rm_name->value();}
+	string part_number() {return rm_part_number->value();}
+	string type() {return rm_type->value();}
+	string weight() {return rm_weight->value();}
+	string cost() {return rm_cost->value();}
+	string description() {return rm_description->value();}
+	
+	private:
+	Fl_Window *dialog;
+	Fl_Input *rm_name;
+	Fl_Input *rm_part_number;
+	Fl_Input *rm_type;
+	Fl_Input *rm_weight;
+	Fl_Input *rm_cost;
+	Fl_Input *rm_description;
+	Fl_Return_Button *rm_create;
+	Fl_Button *rm_cancel;
+};
+
+//
 // Callbacks
 //
 
 void CB(Fl_Widget* w, void* p) { } // No action
 
+// Robot Part callback start
 void menu_create_robot_partCB(Fl_Widget* w, void* p) {
 	robot_part_dlg->show();
 }
@@ -110,6 +173,29 @@ void create_robot_partCB(Fl_Widget* w, void* p) { // Replace with call to model!
 void cancel_robot_partCB(Fl_Widget* w, void* p) {
 	robot_part_dlg->hide();
 }
+// Robot Part callback end
+
+// Robot Model callback start
+void menu_create_robot_modelCB(Fl_Widget* w, void* p) {
+	robot_model_dlg->show();
+}
+
+void create_robot_modelCB(Fl_Widget* w, void* p) { // Replace
+	cout << "### Creating robot model" << endl;
+	cout << "Name    : " << robot_model_dlg->name() << endl;
+	cout << "Part #  : " << robot_model_dlg->part_number() << endl;
+	cout << "Type    : " << robot_model_dlg->type() << endl;
+	cout << "Weight  : " << robot_model_dlg->weight() << endl;
+	cout << "Cost    : " << robot_model_dlg->cost() << endl;
+	cout << "Descript: " << robot_model_dlg->description() << endl;
+	robot_model_dlg->hide();
+}
+
+void cancel_robot_modelCB(Fl_Widget* w, void* p) {
+	robot_model_dlg->hide();
+}
+// Robot Model callback end
+
 
 //
 // Menu
@@ -117,39 +203,45 @@ void cancel_robot_partCB(Fl_Widget* w, void* p) {
 
 Fl_Menu_Item menuitems[] = {
 	{ "&File", 0, 0, 0, FL_SUBMENU },
-	{ "&New", FL_ALT + 'n', (Fl_Callback *)CB },
-	{ "&Open", FL_ALT + 'o', (Fl_Callback *)CB },
-	{ "&Save", FL_ALT + 's', (Fl_Callback *)CB },
-	{ "Save As", FL_ALT + 'S', (Fl_Callback *)CB },
-	{ "&Quit", FL_ALT + 'q', (Fl_Callback *)CB },
-	{ 0 },
+		{ "&New", FL_ALT + 'n', (Fl_Callback *)CB },
+		{ "&Open", FL_ALT + 'o', (Fl_Callback *)CB },
+		{ "&Save", FL_ALT + 's', (Fl_Callback *)CB },
+		{ "Save As", FL_ALT + 'S', (Fl_Callback *)CB },
+		{ "&Quit", FL_ALT + 'q', (Fl_Callback *)CB },
+		{ 0 },
 	{ "&Edit", 0, 0, 0, FL_SUBMENU },
-	{ "&Undo", 0, (Fl_Callback *)CB },
-	{ "Cu&t", 0, (Fl_Callback *)CB },
-	{ "&Copy", 0, (Fl_Callback *)CB },
-	{ "&Paste", 0, (Fl_Callback *)CB },
-	{ 0 },
+		{ "&Undo", 0, (Fl_Callback *)CB },
+		{ "Cu&t", 0, (Fl_Callback *)CB },
+		{ "&Copy", 0, (Fl_Callback *)CB },
+		{ "&Paste", 0, (Fl_Callback *)CB },
+		{ 0 },
 	{ "&Create", 0, 0, 0, FL_SUBMENU },
-	{ "Order", 0, (Fl_Callback *)CB, 0, FL_MENU_DIVIDER  },
-	{ "Customer", 0, (Fl_Callback *)CB },
-	{ "Sales Associate", 0, (Fl_Callback *)CB, 0, FL_MENU_DIVIDER  },
-	{ "Robot Part", 0, (Fl_Callback *)menu_create_robot_partCB },
-	{ "Robot Model", 0, (Fl_Callback *)CB },
-	{ 0 },
+		{ "Order", 0, (Fl_Callback *)CB, 0, FL_MENU_DIVIDER  },
+		{ "Customer", 0, (Fl_Callback *)CB },
+		{ "Sales Associate", 0, (Fl_Callback *)CB, 0, FL_MENU_DIVIDER  },
+		{ "Robot Part", 0, 0, 0, FL_SUBMENU },
+			{ "Arm", 0, (Fl_Callback *)menu_create_robot_partCB },
+			{ "Battery", 0, (Fl_Callback *)CB },
+			{ "Head", 0, (Fl_Callback *)CB },
+			{ "Locomotor", 0, (Fl_Callback *)CB },
+			{ "Torso", 0, (Fl_Callback *)CB },
+			{ 0 },
+		{ "Robot Model", 0, (Fl_Callback *)menu_create_robot_modelCB },
+		{ 0 },
 	{ "&Report", 0, 0, 0, FL_SUBMENU },
-	{ "Invoice", 0, (Fl_Callback *)CB, 0, FL_MENU_DIVIDER  },
-	{ "All Orders", 0, (Fl_Callback *)CB },
-	{ "Orders by Customer", 0, (Fl_Callback *)CB },
-	{ "Orders by Sales Associate", 0, (Fl_Callback *)CB, 0, FL_MENU_DIVIDER },
-	{ "All Customers", 0, (Fl_Callback *)CB },
-	{ "All Sales Associates", 0, (Fl_Callback *)CB, 0, FL_MENU_DIVIDER  },
-	{ "All Robot Models", 0, (Fl_Callback *)CB },
-	{ "All Robot Parts", 0, (Fl_Callback *)CB },
-	{ 0 },
+		{ "Invoice", 0, (Fl_Callback *)CB, 0, FL_MENU_DIVIDER  },
+		{ "All Orders", 0, (Fl_Callback *)CB },
+		{ "Orders by Customer", 0, (Fl_Callback *)CB },
+		{ "Orders by Sales Associate", 0, (Fl_Callback *)CB, 0, FL_MENU_DIVIDER },
+		{ "All Customers", 0, (Fl_Callback *)CB },
+		{ "All Sales Associates", 0, (Fl_Callback *)CB, 0, FL_MENU_DIVIDER  },
+		{ "All Robot Models", 0, (Fl_Callback *)CB },
+		{ "All Robot Parts", 0, (Fl_Callback *)CB },
+		{ 0 },
 	{ "&Help", 0, 0, 0, FL_SUBMENU },
-	{ "&Manual", 0, (Fl_Callback *)CB},
-	{ "&About", 0, (Fl_Callback *)CB},
-	{ 0 },
+		{ "&Manual", 0, (Fl_Callback *)CB},
+		{ "&About", 0, (Fl_Callback *)CB},
+		{ 0 },
 	{ 0 }
 };
 
@@ -163,6 +255,7 @@ int main() {
 	
 	// Create dialogs
 	robot_part_dlg = new Robot_Part_Dialog();
+	robot_model_dlg = new Robot_Model_Dialog();
 	
 	// Create a window
 	win = new Fl_Window(X, Y, "Robbie Robot Shop Manager");

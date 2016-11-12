@@ -1,0 +1,7 @@
+
+- Complete robot parts callback
+- Create robot models dialog; use browser to select from current list of categorized robot parts
+- Create callbacks for robot model
+- Create robot model catalog dialog
+- Create callbacks for robot catalog
+- …
