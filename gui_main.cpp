@@ -1,5 +1,6 @@
 // Professor George Rice: OOP
 // Lecture 19
+///usr/local/Cellar/fltk/1.3.3/include/
 
 #include <FL/Fl.H>
 #include <FL/Fl_Window.H>
@@ -10,7 +11,15 @@
 #include <FL/Fl_Return_Button.H>
 #include <iostream>
 
+//#include "shop.h"
+
 using namespace std;
+
+//
+// Class instance
+//
+
+//Shop shop{"Robbie Robot Shop"};
 
 //
 // Declarations (we'll define later, just need to declare some variables!)
@@ -421,6 +430,7 @@ void create_robot_part_armCB(Fl_Widget* w, void* p) { // Replace with call to mo
 	cout << "Cost    : " << robot_part_arm_dlg->cost() << endl;
 	cout << "Power   : " << robot_part_arm_dlg->power() << endl;
 	cout << "Descript: " << robot_part_arm_dlg->description() << endl;
+	//shop.create_arm("Basic Arm", "276", 1.15, 215.11, 500, "A basic robot arm");
 	robot_part_arm_dlg->hide();
 }
 

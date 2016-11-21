@@ -1,0 +1,371 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3D2C4DB61DD7E718008C3F10 /* arm.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3D2C4D911DD7E718008C3F10 /* arm.cpp */; };
+		3D2C4DB71DD7E718008C3F10 /* battery.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3D2C4D931DD7E718008C3F10 /* battery.cpp */; };
+		3D2C4DB81DD7E718008C3F10 /* controller.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3D2C4D951DD7E718008C3F10 /* controller.cpp */; };
+		3D2C4DB91DD7E718008C3F10 /* customer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3D2C4D971DD7E718008C3F10 /* customer.cpp */; };
+		3D2C4DBA1DD7E718008C3F10 /* gui_main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3D2C4D991DD7E718008C3F10 /* gui_main.cpp */; };
+		3D2C4DBC1DD7E718008C3F10 /* head.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3D2C4D9B1DD7E718008C3F10 /* head.cpp */; };
+		3D2C4DBD1DD7E718008C3F10 /* locomotor.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3D2C4D9D1DD7E718008C3F10 /* locomotor.cpp */; };
+		3D2C4DC01DD7E718008C3F10 /* model.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3D2C4DA11DD7E718008C3F10 /* model.cpp */; };
+		3D2C4DC21DD7E718008C3F10 /* order.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3D2C4DA41DD7E718008C3F10 /* order.cpp */; };
+		3D2C4DC41DD7E718008C3F10 /* part.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3D2C4DA71DD7E718008C3F10 /* part.cpp */; };
+		3D2C4DC61DD7E718008C3F10 /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = 3D2C4DAA1DD7E718008C3F10 /* README.md */; };
+		3D2C4DC71DD7E718008C3F10 /* sa.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3D2C4DAB1DD7E718008C3F10 /* sa.cpp */; };
+		3D2C4DC91DD7E718008C3F10 /* shop.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3D2C4DAE1DD7E718008C3F10 /* shop.cpp */; };
+		3D2C4DCC1DD7E718008C3F10 /* torso.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3D2C4DB31DD7E718008C3F10 /* torso.cpp */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		3D2C4CF41DD7E318008C3F10 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		3D2C4CF61DD7E318008C3F10 /* robotree */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = robotree; sourceTree = BUILT_PRODUCTS_DIR; };
+		3D2C4D911DD7E718008C3F10 /* arm.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = arm.cpp; sourceTree = "<group>"; };
+		3D2C4D921DD7E718008C3F10 /* arm.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = arm.h; sourceTree = "<group>"; };
+		3D2C4D931DD7E718008C3F10 /* battery.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = battery.cpp; sourceTree = "<group>"; };
+		3D2C4D941DD7E718008C3F10 /* battery.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = battery.h; sourceTree = "<group>"; };
+		3D2C4D951DD7E718008C3F10 /* controller.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = controller.cpp; sourceTree = "<group>"; };
+		3D2C4D961DD7E718008C3F10 /* controller.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = controller.h; sourceTree = "<group>"; };
+		3D2C4D971DD7E718008C3F10 /* customer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = customer.cpp; sourceTree = "<group>"; };
+		3D2C4D981DD7E718008C3F10 /* customer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = customer.h; sourceTree = "<group>"; };
+		3D2C4D991DD7E718008C3F10 /* gui_main.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = gui_main.cpp; sourceTree = "<group>"; };
+		3D2C4D9B1DD7E718008C3F10 /* head.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = head.cpp; sourceTree = "<group>"; };
+		3D2C4D9C1DD7E718008C3F10 /* head.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = head.h; sourceTree = "<group>"; };
+		3D2C4D9D1DD7E718008C3F10 /* locomotor.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = locomotor.cpp; sourceTree = "<group>"; };
+		3D2C4D9E1DD7E718008C3F10 /* locomotor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = locomotor.h; sourceTree = "<group>"; };
+		3D2C4DA11DD7E718008C3F10 /* model.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = model.cpp; sourceTree = "<group>"; };
+		3D2C4DA21DD7E718008C3F10 /* model.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = model.h; sourceTree = "<group>"; };
+		3D2C4DA41DD7E718008C3F10 /* order.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = order.cpp; sourceTree = "<group>"; };
+		3D2C4DA51DD7E718008C3F10 /* order.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = order.h; sourceTree = "<group>"; };
+		3D2C4DA71DD7E718008C3F10 /* part.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = part.cpp; sourceTree = "<group>"; };
+		3D2C4DA81DD7E718008C3F10 /* part.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = part.h; sourceTree = "<group>"; };
+		3D2C4DAA1DD7E718008C3F10 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		3D2C4DAB1DD7E718008C3F10 /* sa.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = sa.cpp; sourceTree = "<group>"; };
+		3D2C4DAC1DD7E718008C3F10 /* sa.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = sa.h; sourceTree = "<group>"; };
+		3D2C4DAE1DD7E718008C3F10 /* shop.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = shop.cpp; sourceTree = "<group>"; };
+		3D2C4DAF1DD7E718008C3F10 /* shop.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = shop.h; sourceTree = "<group>"; };
+		3D2C4DB31DD7E718008C3F10 /* torso.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = torso.cpp; sourceTree = "<group>"; };
+		3D2C4DB41DD7E718008C3F10 /* torso.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = torso.h; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		3D2C4CF31DD7E318008C3F10 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3D2C4CED1DD7E318008C3F10 = {
+			isa = PBXGroup;
+			children = (
+				3D2C4CF81DD7E318008C3F10 /* robotree */,
+				3D2C4CF71DD7E318008C3F10 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		3D2C4CF71DD7E318008C3F10 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3D2C4CF61DD7E318008C3F10 /* robotree */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3D2C4CF81DD7E318008C3F10 /* robotree */ = {
+			isa = PBXGroup;
+			children = (
+				3D2C4D911DD7E718008C3F10 /* arm.cpp */,
+				3D2C4D921DD7E718008C3F10 /* arm.h */,
+				3D2C4D931DD7E718008C3F10 /* battery.cpp */,
+				3D2C4D941DD7E718008C3F10 /* battery.h */,
+				3D2C4D951DD7E718008C3F10 /* controller.cpp */,
+				3D2C4D961DD7E718008C3F10 /* controller.h */,
+				3D2C4D971DD7E718008C3F10 /* customer.cpp */,
+				3D2C4D981DD7E718008C3F10 /* customer.h */,
+				3D2C4D991DD7E718008C3F10 /* gui_main.cpp */,
+				3D2C4D9B1DD7E718008C3F10 /* head.cpp */,
+				3D2C4D9C1DD7E718008C3F10 /* head.h */,
+				3D2C4D9D1DD7E718008C3F10 /* locomotor.cpp */,
+				3D2C4D9E1DD7E718008C3F10 /* locomotor.h */,
+				3D2C4DA11DD7E718008C3F10 /* model.cpp */,
+				3D2C4DA21DD7E718008C3F10 /* model.h */,
+				3D2C4DA41DD7E718008C3F10 /* order.cpp */,
+				3D2C4DA51DD7E718008C3F10 /* order.h */,
+				3D2C4DA71DD7E718008C3F10 /* part.cpp */,
+				3D2C4DA81DD7E718008C3F10 /* part.h */,
+				3D2C4DAA1DD7E718008C3F10 /* README.md */,
+				3D2C4DAB1DD7E718008C3F10 /* sa.cpp */,
+				3D2C4DAC1DD7E718008C3F10 /* sa.h */,
+				3D2C4DAE1DD7E718008C3F10 /* shop.cpp */,
+				3D2C4DAF1DD7E718008C3F10 /* shop.h */,
+				3D2C4DB31DD7E718008C3F10 /* torso.cpp */,
+				3D2C4DB41DD7E718008C3F10 /* torso.h */,
+			);
+			path = robotree;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		3D2C4CF51DD7E318008C3F10 /* robotree */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3D2C4CFD1DD7E318008C3F10 /* Build configuration list for PBXNativeTarget "robotree" */;
+			buildPhases = (
+				3D2C4CF21DD7E318008C3F10 /* Sources */,
+				3D2C4CF31DD7E318008C3F10 /* Frameworks */,
+				3D2C4CF41DD7E318008C3F10 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = robotree;
+			productName = robotree;
+			productReference = 3D2C4CF61DD7E318008C3F10 /* robotree */;
+			productType = "com.apple.product-type.tool";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		3D2C4CEE1DD7E318008C3F10 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0800;
+				ORGANIZATIONNAME = JVG;
+				TargetAttributes = {
+					3D2C4CF51DD7E318008C3F10 = {
+						CreatedOnToolsVersion = 8.0;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 3D2C4CF11DD7E318008C3F10 /* Build configuration list for PBXProject "robotree" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 3D2C4CED1DD7E318008C3F10;
+			productRefGroup = 3D2C4CF71DD7E318008C3F10 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				3D2C4CF51DD7E318008C3F10 /* robotree */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3D2C4CF21DD7E318008C3F10 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3D2C4DBC1DD7E718008C3F10 /* head.cpp in Sources */,
+				3D2C4DB81DD7E718008C3F10 /* controller.cpp in Sources */,
+				3D2C4DC91DD7E718008C3F10 /* shop.cpp in Sources */,
+				3D2C4DC01DD7E718008C3F10 /* model.cpp in Sources */,
+				3D2C4DB61DD7E718008C3F10 /* arm.cpp in Sources */,
+				3D2C4DB71DD7E718008C3F10 /* battery.cpp in Sources */,
+				3D2C4DC41DD7E718008C3F10 /* part.cpp in Sources */,
+				3D2C4DBD1DD7E718008C3F10 /* locomotor.cpp in Sources */,
+				3D2C4DC71DD7E718008C3F10 /* sa.cpp in Sources */,
+				3D2C4DC61DD7E718008C3F10 /* README.md in Sources */,
+				3D2C4DBA1DD7E718008C3F10 /* gui_main.cpp in Sources */,
+				3D2C4DC21DD7E718008C3F10 /* order.cpp in Sources */,
+				3D2C4DB91DD7E718008C3F10 /* customer.cpp in Sources */,
+				3D2C4DCC1DD7E718008C3F10 /* torso.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		3D2C4CFB1DD7E318008C3F10 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		3D2C4CFC1DD7E318008C3F10 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		3D2C4CFE1DD7E318008C3F10 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = YES;
+				HEADER_SEARCH_PATHS = "-I/usr/local/include";
+				"HEADER_SEARCH_PATHS[arch=*]" = "-I/usr/local/include";
+				LIBRARY_SEARCH_PATHS = /usr/local/lib;
+				"LIBRARY_SEARCH_PATHS[arch=*]" = /usr/local/lib;
+				OTHER_LDFLAGS = (
+					"-L/usr/local/lib",
+					"-lfltk",
+					"-lpthread",
+					"-framework",
+					Cocoa,
+				);
+				"OTHER_LDFLAGS[arch=*]" = (
+					"-L/usr/local/lib",
+					"-lfltk",
+					"-lpthread",
+					"-framework",
+					Cocoa,
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				USER_HEADER_SEARCH_PATHS = /usr/local/Cellar/fltk/1.3.3/include;
+				"USER_HEADER_SEARCH_PATHS[arch=*]" = /usr/local/Cellar/fltk/1.3.3/include;
+			};
+			name = Debug;
+		};
+		3D2C4CFF1DD7E318008C3F10 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = YES;
+				HEADER_SEARCH_PATHS = "-I/usr/local/include";
+				LIBRARY_SEARCH_PATHS = /usr/local/lib;
+				"LIBRARY_SEARCH_PATHS[arch=*]" = /usr/local/lib;
+				OTHER_LDFLAGS = (
+					"-L/usr/local/lib",
+					"-lfltk",
+					"-lpthread",
+					"-framework",
+					Cocoa,
+				);
+				"OTHER_LDFLAGS[arch=*]" = (
+					"-L/usr/local/lib",
+					"-lfltk",
+					"-lpthread",
+					"-framework",
+					Cocoa,
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				USER_HEADER_SEARCH_PATHS = /usr/local/Cellar/fltk/1.3.3/include;
+				"USER_HEADER_SEARCH_PATHS[arch=*]" = /usr/local/Cellar/fltk/1.3.3/include;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		3D2C4CF11DD7E318008C3F10 /* Build configuration list for PBXProject "robotree" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3D2C4CFB1DD7E318008C3F10 /* Debug */,
+				3D2C4CFC1DD7E318008C3F10 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3D2C4CFD1DD7E318008C3F10 /* Build configuration list for PBXNativeTarget "robotree" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3D2C4CFE1DD7E318008C3F10 /* Debug */,
+				3D2C4CFF1DD7E318008C3F10 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 3D2C4CEE1DD7E318008C3F10 /* Project object */;
+}
